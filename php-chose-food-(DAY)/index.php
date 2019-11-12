@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include 'class_food.php';
 
 $buz = new Day();
@@ -15,9 +15,11 @@ function Ostatok($buz){echo "Ostatok: ". $buz->coloriesIsStill();}
 
 
 function DayFill($buz){
+  do{
     fillThisPart($buz->Breakfast,'breakfast');
     fillThisPart($buz->Lunch,'feat');
     fillThisPart($buz->Dinner,'dinner');
+  }while($buz->coloriesIsStill() > 300 );
 }
 
 function fillThisPart($FoodType,$tableName){
