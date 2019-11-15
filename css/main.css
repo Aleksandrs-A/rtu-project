@@ -1,0 +1,551 @@
+h1 {
+    padding-top: 5px;
+    font-size: 10vh;
+    font-weight: 100;
+    margin-bottom: 0px;
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+}
+
+i.fas.fa-heart {
+    font-size: 7vh;
+}
+
+h2 {
+    padding-top: 100px;
+    font-size: 70px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    font-family: 'Baloo Bhai', cursive;
+
+  color: transparent;
+  transition: all 1s;
+  }
+
+h3 {
+    padding-top: 15vh;
+    font-size: 70px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    font-family: 'Baloo Bhai', cursive;
+      text-shadow: 4px 4px 0 hsl(180, 25%, 25%), 
+          3.5px 3.5px 0 hsl(180,25%,55%), 
+          3px 3px 0 hsl(280,25%,60%), 
+          2.5px 2.5px 0 hsl(180,25%,65%), 
+          2px 2px 0 hsl(180,25%,70%), 
+          1.5px 1.5px 0 hsl(180,25%,75%), 
+          1px 1px 0 hsl(180,25%,80%), 
+          0.5px 0.5px 0 hsl(180,25%,85%), 
+          0 0 0 hsl(180,25%,95%);
+  color: transparent;
+  transition: all 1s;
+}
+
+h4 {
+    font-weight: 10;
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: 'McLaren', cursive;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    outline-style: none;
+    font-family: 'Baloo Bhai', cursive;
+    padding: 0px;
+    color: ghostwhite;
+}
+
+.navbar {
+    background-color: darkslategrey;
+    color: floralwhite;
+    font-size: 20px;
+}
+
+/* SHIFT */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+.navbar ul li a {
+  position:relative;
+  z-index: 1;
+}
+.navbar ul li a:hover {
+  color: darkslategray;
+}
+.navbar ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  border-radius: 5px;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+.nav-item {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.collapse {
+    text-align: center;
+    justify-content: center;
+}
+
+a .dropdown-item {
+    color: darkslategray;
+}
+
+.nav-brand {
+    padding: none;
+}
+
+.brand {
+    width: 45px;
+    padding: 8px;
+}
+
+.header {
+    height: 100vh;
+    max-height: 100vh;
+    background-color: mediumseagreen;
+    background-image: url(img/background.png);
+    background-size: cover;
+}
+
+.header-text {
+    justify-content: center;
+    text-align: center;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.header-slogan {
+    padding-top: 0px;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+.default {
+    height: 100vh;
+    max-height: 100vh;
+    background-color: darkseagreen;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.divider-custom.divider-light .divider-custom-line {
+    background-color: #fff;
+    width: 30vh;
+    height: 1.2vh;
+    border-radius: 10px;
+}
+
+.divider-custom.divider-light .divider-custom-large-line {
+    background-color: #fff;
+    width: 100vh;
+    height: 1.2vh;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 hsl(180, 25%, 25%), 
+          3.5px 3.5px 0 hsl(180,25%,55%), 
+          3px 3px 0 hsl(280,25%,60%), 
+          2.5px 2.5px 0 hsl(180,25%,65%), 
+          2px 2px 0 hsl(180,25%,70%), 
+          1.5px 1.5px 0 hsl(180,25%,75%), 
+          1px 1px 0 hsl(180,25%,80%), 
+          0.5px 0.5px 0 hsl(180,25%,85%), 
+          0 0 0 hsl(180,25%,95%);
+}
+
+.divider-custom.divider-light .divider-custom-icon {
+    font-size: 0px;
+    text-align: center;
+    color: white;
+}
+
+.divider-custom .divider-custom-line {
+    margin: 1rem;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.logo-header {
+    padding-top: 15vh;
+    padding-bottom: 2vh;
+    width: 25vh;
+    height: auto;
+      -webkit-filter: drop-shadow(2px 2px 2px #222);
+      filter: drop-shadow(2px 2px 2px #222);    
+}
+
+.transform {
+   transition: all 0.5s ease-out;
+}
+.transform:hover {
+   transform: scale(1.05);
+}
+
+.navbar-transform {
+   transition: all 0.5s ease-out;
+}
+.navbar-transform:hover {
+   transform: scale(1.15);
+}
+
+.row:last-child {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.default {
+            background-image: url(img/section-backgroud/SectionBackground-6.png);
+    background-size: cover;
+}
+
+.default h3 {
+    font-size: 8vh;
+}
+
+.default h4 {
+    font-size: 4vh;
+    font-weight: 10;
+}
+
+.counter {
+    width: 40vw;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 4px 4px 0 hsl(180, 25%, 25%), 
+          3.5px 3.5px 0 hsl(180,25%,55%), 
+          3px 3px 0 hsl(280,25%,60%), 
+          2.5px 2.5px 0 hsl(180,25%,65%), 
+          2px 2px 0 hsl(180,25%,70%), 
+          1.5px 1.5px 0 hsl(180,25%,75%), 
+          1px 1px 0 hsl(180,25%,80%), 
+          0.5px 0.5px 0 hsl(180,25%,85%), 
+          0 0 0 hsl(180,25%,95%);
+}
+
+.counter p {
+    text-align: center;
+    font-size: 5vh;
+    color: darkslategray;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.im-fluid {
+    width: 100%;
+    height: auto;
+}
+
+/* Portfolio items*/
+.item-column {
+    width: 30vh;
+    height: auto;
+    flex: 0 0 15.15%;
+    max-width: 15.15%;
+}
+
+@media (min-width: 768px)
+.item-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.item-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 2vh;
+    margin-right: auto!important;
+    box-sizing: border-box;
+}
+
+.portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    background-color: darkslategrey;
+    height: 100%!important;
+    width: 100%!important;
+    align-items: center!important;
+    justify-content: center!important;
+    display: flex!important;
+    box-sizing: border-box;
+}
+
+.portfolio-item-caption:hover {
+    opacity: 1;
+}
+
+.portfolio-item-caption-content {
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 992px){
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.portfolio-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #1abc9c;
+  opacity: 1;
+}
+
+.button-start .btn {
+    width: 50vw;
+    border-radius: 28px;
+    font-size: 5vh;
+    color: white;
+    background-color: #E43440;
+}
+
+.footer {
+    height: auto;
+    max-height: auto;
+    background-color: rgb(45, 70, 70);
+}
+
+.footer h4 {
+    font-size: 4vh;
+    font-weight: 50;
+    margin-bottom: 0px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.footer h4:last-child {
+    text-align: inherit;
+}
+
+.footer-line {
+    background-color: white;
+    border-radius: 5px;
+    width: 3px;
+    height: 70vh;
+    margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-line {
+    background-color: white;
+    border-radius: 5px;
+    width: 90vh;
+    height: 3px;
+    margin-bottom: 2vh;
+        }
+}
+
+.footer-icons {
+    padding: 2vh;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.footer-copyright {
+    background-color: rgb(50, 90, 90);
+}
+
+.footer-copyright h4{
+    font-size: 3vh;
+    font-weight: 50;
+    margin-bottom: 0px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.footer-icons a i,
+.footer-icons a i:after,
+.footer-icons a i:before {
+  transition: all .5s;
+}
+.footer-icons a i:hover {
+  color: #555;
+}
+
+.footer-icons a i {
+    position: relative;
+    z-index: 1;
+    font-size: 3vh;
+    padding: 1vh;
+    border-radius: 20px;
+}
+
+.footer-icons a i:hover {
+    color: darkslategray;
+    text-decoration: none;
+    background: #F1C40F;
+    padding: 2vh;
+    
+}
+
+.footer-creators {
+    padding: 1vh;
+    font-size: 2vh;
+}
+
+.footer ul li a,
+.footer ul li a:after,
+.footer ul li a:before {
+  transition: all .5s;
+}
+
+.footer ul li a:hover {
+  color: #555;
+}
+
+.footer ul li {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.footer ul li a {
+    position: relative;
+    z-index: 1;
+    font-size: 3vh;
+    padding: 1vh;
+    border-radius: 20px;
+}
+
+.footer ul li a:hover {
+    color: darkslategray;
+    text-decoration: none;
+    background: #F1C40F;
+    padding: 2vh;
+    
+}
+
+.footer ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  border-radius: 5px;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.modal-content {
+    border-radius: 20px;
+}
+
+.modal-title {
+    font-size: 8vh;
+    padding: 2vh;
+    color: darkslategray;
+}
+
+.modal .modal-dialog .modal-content .modal-body .container {
+    height: auto;
+}
+
+.modal-img {
+    width: 35vh;
+}
+
+.modal-text {
+    font-size: 2.5vh;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+
+p.mb-5 {
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: 'McLaren', cursive;
+    color: darkslategray;
+}
+
+
+

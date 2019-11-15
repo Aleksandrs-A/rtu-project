@@ -1,0 +1,121 @@
+body {
+    background-color: darkseagreen;
+    background: url(img/pattern-2.png);
+    background-repeat: repeat;
+}
+
+.form-heading {
+    padding-top: 1px;
+    font-size: 200%;
+    font-weight: 100;
+    margin-bottom: 0px;
+    font-family: "Baloo Bhai", cursive;
+    color: darkslategrey;
+    text-align: center;
+}
+
+.form-dish {
+    padding-top: 1px;
+    font-size: 120%;
+    font-weight: 100;
+    margin-bottom: 0px;
+    font-family: "Baloo Bhai", cursive;
+    color: darkslategrey;
+}
+
+.form-dish-list {
+    padding-left: 50px;
+}
+
+.form-dish-list {
+    font-weight: 10;
+    margin-bottom: 0px;
+    font-family: McLaren, cursive;
+    color: darkslategrey;
+    font-size: 80%;
+}
+
+.pagebreak {
+    width: 100%;
+    height: 25px;
+    margin: 0px;
+}
+
+.mainform {
+    height: 230px;
+}
+
+.pagelist {
+    background-color: blanchedalmond;
+    margin: 0 auto; 
+    width: 650px;
+    border-radius: 60px;
+    box-shadow: 4px 4px 0 hsl(180, 25%, 25%), 
+          3.5px 3.5px 0 hsl(180,25%,55%), 
+          3px 3px 0 hsl(280,25%,60%), 
+          2.5px 2.5px 0 hsl(180,25%,65%), 
+          2px 2px 0 hsl(180,25%,70%), 
+          1.5px 1.5px 0 hsl(180,25%,75%), 
+          1px 1px 0 hsl(180,25%,80%), 
+          0.5px 0.5px 0 hsl(180,25%,85%), 
+          0 0 0 hsl(180,25%,95%);    
+    
+}
+
+.container {
+    height: 100%;
+    display: flex;
+}
+
+.img-col {
+    padding: 0px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10000px;
+    background-color: burlywood;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.main-image {
+    width:70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16%;
+    margin-bottom: 20%;
+}
+
+.text-col {
+    padding: 0px;
+    height: 60px;
+    width: 60px;
+    border-radius: 10000px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.divider-custom-dark {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.divider-custom-dark.divider-light .divider-custom-dark-line {
+    background-color: darkslategrey;
+    width: 40%;
+    height: 3px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+i.dark-heart.fas.fa-heart {
+    font-size: 15px;
+}
