@@ -1,0 +1,52 @@
+<div class="calc-outer-wrap">
+<div id="form-error" style="display:none;"></div>
+<form class="calc-form" id="calc-form">
+  <div class="form-fields">
+
+    <div class="field-outer">
+      <label for="distance" class="top-label">Age:</label>
+      <div class="field-items">
+        <div class="field field-large">         
+          <input type="text" name="age" id="age" inputmode="numeric" pattern="[0-9]*">
+        </div><!--  /.field-large -->
+        
+        <div class="field field-medium">
+          <select name="gender">
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+                   
+          </select>
+          
+        </div><!--  /.field-small -->
+      </div><!--  /.field-items -->
+    </div><!--  /.field-outer -->
+
+    <div class="field-outer">
+      <label for="height" class="top-label">Height:</label>
+      <div class="field-items">
+               <div class="field">
+          <input type="text" name="height_cm" id="height-cm" inputmode="numeric" pattern="[0-9]*">
+          <label for="height-cm">cm</label>
+        </div><!--  /.field -->        
+      </div><!--  /.field-items -->
+    </div><!--  /.field-outer -->
+
+    <div class="field-outer">
+      <label for="weight" class="top-label">Your weight:</label>
+      <div class="field-items">
+        <div class="field field-large">
+          <input type="text" name="weight" id="weight" inputmode="numeric" pattern="[0-9]*">
+          <label for="weight">kg</label>
+          </select>
+        </div><!--  /.field-small -->
+      </div><!--  /.field-items -->
+    </div><!--  /.field-outer -->
+   <div class="btn-wrap field-outer">
+    <button class="form-submit">Calculate</button>
+  </div>
+  </div><!--  /.form fields -->
+
+
+</form>
+<div id="results" style="display:none;"></div>
+</div><!--  /.calc-outer-wrap -->
